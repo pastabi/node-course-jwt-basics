@@ -1,12 +1,9 @@
-const mongoose = require('mongoose')
+// WE DON'T CONNECT TO DATABASE IN THIS PROJECT, ITS JUST FOR PRACTICE
+// -----
+// const mongoose = require("mongoose");
 
-const connectDB = (url) => {
-  return mongoose.connect(url, {
-    useNewUrlParser: true,
-    useCreateIndex: true,
-    useFindAndModify: false,
-    useUnifiedTopology: true,
-  })
-}
+// const connectDB = (url) => {
+//   return mongoose.connect(url);
+// };
 
-module.exports = connectDB
+// module.exports = connectDB;

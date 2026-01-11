@@ -8,7 +8,7 @@ const login = async (req, res) => {
     throw new BadRequest("Please provide username and password");
   }
 
-  // if for demo since we don't connect to db
+  // id for demo since we don't connect to db
   const id = Date.now();
 
   const token = jwt.sign({ username, id }, process.env.JWT_SECRET, { expiresIn: "30d" });
